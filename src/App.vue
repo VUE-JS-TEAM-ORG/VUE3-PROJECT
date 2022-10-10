@@ -4,12 +4,14 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="50" height="125" />
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink><RouterLink to="/jspdf">Jspdf</RouterLink><RouterLink to="/pdfmake">PdfMake</RouterLink>
+        
       </nav>
     </div>
   </header>
@@ -21,6 +23,7 @@ import HelloWorld from './components/HelloWorld.vue'
 header {
   line-height: 1.5;
   max-height: 100vh;
+  background-color: aqua;
 }
 
 .logo {
@@ -32,7 +35,8 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  background-color: greenyellow;
 }
 
 nav a.router-link-exact-active {
